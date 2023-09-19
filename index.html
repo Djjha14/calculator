@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="./calculatorcodesoft.css">
+   <title>codesoft Calulator</title>
+   <style>
+   
+      img {
+         max-width: 100%;
+         height: 100vh;
+      }
+   </style>
+</head>
+<body>
+   <img src="calculator1.png" alt=" ">
+   <div class="main">
+      <input type="text" id = 'res'>
+      <div class="buttons">
+         <input id="num_input" type="button" value = 'Clear' onclick = "clearResult()">
+         <input id="num_input" type="button" value = '%' onclick = "appendToResult('%')">
+         <input id="num_input" type="button" value = '←' onclick ="Backspace('←')">
+         <input id="num_input" type="button" value = '/' onclick = "appendToResult('/')">
+         <br>
+         <input id="num_input" type="button" value = '7' onclick = "appendToResult('7')">
+         <input id="num_input" type="button" value = '8' onclick = "appendToResult('8')">
+         <input id="num_input" type="button" value = '9' onclick = "appendToResult('9')">
+         <input id="num_input" type="button" value = 'x' onclick = "appendToResult('*')">
+         <br>
+         <input id="num_input" type="button" value = '4' onclick = "appendToResult('4')">
+         <input id="num_input" type="button" value = '5' onclick = "appendToResult('5')">
+         <input id="num_input" type="button" value = '6' onclick = "appendToResult('6')">
+         <input id="num_input" type="button" value = '-' onclick = "appendToResult('-')">
+         <br>
+         <input id="num_input" type="button" value = '1' onclick = "appendToResult('1')">
+         <input id="num_input" type="button" value = '2' onclick = "appendToResult('2')">
+         <input id="num_input" type="button" value = '3' onclick = "appendToResult('3')">
+         <input id="num_input" type="button" value = '+' onclick = "appendToResult('+')">
+         <br>
+         <input id="num_input" type="button" value = '00'onclick = "appendToResult('00')">
+         <input id="num_input" type="button" value = '0' onclick = "appendToResult('0')">
+         <input id="num_input" type="button" value = '.' onclick = "appendToResult('.')">
+         <input id="num_input" type="button" value = '=' onclick = "calculateResult()">
+      </div>
+   </div>
+   <script src = './calculatorcodesoft.js' ></script>
+</body>
+</html>
